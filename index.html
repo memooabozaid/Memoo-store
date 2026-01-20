@@ -8,87 +8,74 @@
 
 <style>
 body{
-margin:0;
-font-family:Arial;
-background:#f7f7f7;
+  margin:0;
+  background:#000;
+  color:#ff2f92;
+  font-family: Arial, sans-serif;
 }
 
 header{
-background:black;
-text-align:center;
-padding:25px;
+  text-align:center;
+  padding:30px 15px;
+  border-bottom:2px solid #ff2f92;
 }
 
-.logo{
-font-family:'Pacifico',cursive;
-font-size:42px;
-color:#ff69b4;
-margin:0;
+header h1{
+  font-family:'Pacifico', cursive;
+  font-size:46px;
+  margin:0;
 }
 
-.socials{
-margin-top:15px;
-display:flex;
-justify-content:center;
-gap:15px;
+.social{
+  margin-top:15px;
 }
 
-.socials img{
-width:35px;
-cursor:pointer;
+.social img{
+  width:42px;
+  margin:0 12px;
+  cursor:pointer;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:25px 15px;
 }
 
 .section{
-margin-top:40px;
+  margin-bottom:40px;
 }
 
 .section h2{
-text-align:center;
-font-size:28px;
-}
-
-.products{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:20px;
+  margin-bottom:15px;
+  border-bottom:1px solid #ff2f92;
+  padding-bottom:6px;
 }
 
 .product{
-background:white;
-width:220px;
-padding:15px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+  border:1px solid #ff2f92;
+  padding:16px;
+  text-align:center;
 }
 
-.img{
-height:180px;
-background:#eee;
-border-radius:10px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#777;
-margin-bottom:10px;
+.product img{
+  width:100%;
+  height:220px;
+  background:#1a1a1a;
+  object-fit:cover;
 }
 
-button{
-width:100%;
-padding:10px;
-background:black;
-color:#ff69b4;
-border:none;
-border-radius:6px;
-cursor:pointer;
-font-weight:bold;
+.product p{
+  margin:12px 0;
 }
 
-button:hover{
-background:#ff69b4;
-color:black;
+.order{
+  display:inline-block;
+  padding:9px 20px;
+  background:#ff2f92;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -96,132 +83,90 @@ color:black;
 <body>
 
 <header>
-<h1 class="logo">Memoo Store</h1>
-
-<div class="socials">
-    <a href="https://wa.me/201092535449" target="_blank">
-        <img src="icons/whatsapp.png">
-    </a>
-    <a href="https://instagram.com/Memoostore" target="_blank">
-        <img src="icons/instagram.png">
-    </a>
-    <a href="https://t.me/username" target="_blank">
-        <img src="icons/telegram.png">
-    </a>
-</div>
+  <h1>Memoo Store</h1>
+  <div class="social">
+    <a href="https://wa.me/201092535449" target="_blank"><img src="icons/whatsapp.png"></a>
+    <a href="https://instagram.com/memoostore" target="_blank"><img src="icons/instagram.png"></a>
+    <a href="https://t.me/201092535449" target="_blank"><img src="icons/telegram.png"></a>
+  </div>
 </header>
 
-<!-- Jeans -->
-<div class="section">
-<h2>Jeans</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Jeans</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Jeans')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+<div class="container">
 
-<!-- Sets -->
-<div class="section">
-<h2>Sets</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Sets</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Sets')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+  <div class="section">
+    <h2>Hoodies</h2>
+    <div class="product">
+      <img>
+      <p>Hoodie</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Hoodie">Order Now</a>
+    </div>
+  </div>
 
-<!-- Jackets -->
-<div class="section">
-<h2>Jackets</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Jackets</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Jackets')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+  <div class="section">
+    <h2>Sweaters</h2>
+    <div class="product">
+      <img>
+      <p>Sweater</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Sweater">Order Now</a>
+    </div>
+  </div>
 
-<!-- Basics -->
-<div class="section">
-<h2>Basics</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Basics</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Basics')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+  <div class="section">
+    <h2>Jeans</h2>
+    <div class="product">
+      <img>
+      <p>Jeans</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Jeans">Order Now</a>
+    </div>
+  </div>
 
-<!-- T-Shirts -->
-<div class="section">
-<h2>T-Shirts</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>T-Shirts</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order T-Shirts')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+  <div class="section">
+    <h2>Sets</h2>
+    <div class="product">
+      <img>
+      <p>Set</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Set">Order Now</a>
+    </div>
+  </div>
 
-<!-- Hoodies -->
-<div class="section">
-<h2>Hoodies</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Hoodies</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Hoodies')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+  <div class="section">
+    <h2>Jackets</h2>
+    <div class="product">
+      <img>
+      <p>Jacket</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Jacket">Order Now</a>
+    </div>
+  </div>
 
-<!-- Sweaters -->
-<div class="section">
-<h2>Sweaters</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Sweaters</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Sweaters')">
-Order Now
-</button>
-</div>
-</div>
-</div>
+  <div class="section">
+    <h2>Basics</h2>
+    <div class="product">
+      <img>
+      <p>Basic</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Basic">Order Now</a>
+    </div>
+  </div>
 
-<!-- Ramadan Abayas -->
-<div class="section">
-<h2>Ramadan Abayas 🌙</h2>
-<div class="products">
-<div class="product">
-<div class="img">Image</div>
-<p>Ramadan Abaya</p>
-<button onclick="window.open('https://wa.me/201092535449?text=I want to order Ramadan Abaya')">
-Order Now
-</button>
-</div>
-</div>
+  <div class="section">
+    <h2>T-Shirts</h2>
+    <div class="product">
+      <img>
+      <p>T-Shirt</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20T-Shirt">Order Now</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Ramadan Abayas</h2>
+    <div class="product">
+      <img>
+      <p>Abaya</p>
+      <a class="order" href="https://wa.me/201092535449?text=I%20want%20Abaya">Order Now</a>
+    </div>
+  </div>
+
 </div>
 
 </body>
 </html>
+
